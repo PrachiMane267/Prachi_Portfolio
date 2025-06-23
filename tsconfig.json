@@ -1,13 +1,16 @@
-// {
-//   "files": [],
-//   "references": [
-//     { "path": "./tsconfig.app.json" },
-//     { "path": "./tsconfig.node.json" }
-    
-//   ]
-// }
 {
-"module": "ESNext",
-"moduleResolution": "Node",
-"target": "ESNext"
+  "compilerOptions": {
+    "target": "ESNext",
+    "useDefineForClassFields": true,
+    "module": "ESNext",
+    "moduleResolution": "Bundler",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "esModuleInterop": true,
+    "lib": ["DOM", "ESNext"],
+    "jsx": "react-jsx",
+    "outDir": "./dist"
+  },
+  "include": ["src"]
 }
+

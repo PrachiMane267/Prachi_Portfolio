@@ -1,12 +1,25 @@
-
+import React from 'react';
+import Hero from './components/Hero';
+import About from './components/About';
+import Skills from './components/Skills';
 import Projects from './components/Projects';
+import Services from './components/Services';
+import Contact from './components/Contact';
+import Footer from './components/Footer';
+import Navigation from './components/Navigation';
 
 function App() {
   return (
-    <div className="min-h-screen p-10 bg-gradient-to-br from-blue-50 to-purple-100">
-      <h1 className="text-4xl font-bold mb-6">Prachi Mane - Portfolio</h1>
+    <>
+      <Navigation />
+      <Hero />
+      <About />
+      <Skills />
       <Projects />
-    </div>
+      <Services />
+      <Contact />
+      <Footer />
+    </>
   );
 }
 

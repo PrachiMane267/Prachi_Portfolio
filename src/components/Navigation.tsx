@@ -127,3 +127,4 @@ const Navigation: React.FC<NavigationProps> = ({ currentSection }) => {
 };
 
 export default Navigation;
+

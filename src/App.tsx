@@ -1,4 +1,4 @@
-import React from 'react';
+
 import Hero from './components/Hero';
 import About from './components/About';
 import Skills from './components/Skills';
@@ -11,7 +11,7 @@ import Navigation from './components/Navigation';
 function App() {
   return (
     <>
-      <Navigation />
+      <Navigation currentSection="home" />
       <Hero />
       <About />
       <Skills />

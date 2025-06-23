@@ -75,7 +75,7 @@ const Skills: React.FC = () => {
 
         {/* Skills Grid */}
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
-          {skillCategories.map((category, index) => (
+          {skillCategories.map((category) => (
             <div
               key={category.title}
               className="group bg-white rounded-3xl p-8 shadow-xl hover:shadow-2xl transform hover:-translate-y-2 transition-all duration-300 border border-gray-100"
@@ -94,7 +94,7 @@ const Skills: React.FC = () => {
 
               {/* Skills List */}
               <div className="space-y-3">
-                {category.skills.map((skill, skillIndex) => (
+                {category.skills.map((skill) => (
                   <div key={skill.name} className="space-y-2">
                     <div className="flex justify-between items-center">
                       <span className="text-gray-700 font-medium text-sm">{skill.name}</span>
@@ -143,7 +143,7 @@ const Skills: React.FC = () => {
                 color: 'from-orange-500 to-red-500',
                 description: 'Analytical thinking and creative solution finding'
               }
-            ].map((item, index) => (
+            ].map((item) => (
               <div key={item.skill} className="text-center space-y-4">
                 <div className={`inline-flex p-4 rounded-2xl bg-gradient-to-r ${item.color} shadow-lg`}>
                   <div className="text-white">{item.icon}</div>

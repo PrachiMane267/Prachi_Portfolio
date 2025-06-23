@@ -128,7 +128,7 @@ const Services: React.FC = () => {
 
         {/* Services Grid */}
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-20">
-          {services.map((service, index) => (
+          {services.map((service) => (
             <div
               key={service.title}
               className="group bg-white rounded-3xl p-8 shadow-xl hover:shadow-2xl transform hover:-translate-y-2 transition-all duration-500 border border-gray-100 relative overflow-hidden"
@@ -153,16 +153,15 @@ const Services: React.FC = () => {
                   {service.description}
                 </p>
 
-                {/* Price */}
-                <div className="mb-6">
+                {/* <div className="mb-6">
                   <span className={`text-lg font-bold bg-gradient-to-r ${service.color} bg-clip-text text-transparent`}>
                     {service.price}
                   </span>
-                </div>
+                </div> */}
 
                 {/* Features List */}
                 <ul className="space-y-3 mb-8">
-                  {service.features.map((feature, featureIndex) => (
+                  {service.features.map((feature) => (
                     <li key={feature} className="flex items-center space-x-3">
                       <div className={`w-2 h-2 rounded-full bg-gradient-to-r ${service.color} flex-shrink-0`}></div>
                       <span className="text-sm text-gray-600">{feature}</span>

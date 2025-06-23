@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Mail, Linkedin, Send, MapPin, Phone, MessageCircle, Clock, CheckCircle } from 'lucide-react';
+import { Mail, Linkedin, Send, MapPin, MessageCircle, Clock, CheckCircle } from 'lucide-react';
 
 const Contact: React.FC = () => {
   const [formData, setFormData] = useState({
@@ -100,7 +100,7 @@ const Contact: React.FC = () => {
 
             {/* Contact Methods */}
             <div className="space-y-6">
-              {contactMethods.map((method, index) => (
+              {contactMethods.map((method) => (
                 <div key={method.title} className="group">
                   <a 
                     href={method.link}
@@ -128,7 +128,7 @@ const Contact: React.FC = () => {
                 <h4 className="font-bold text-gray-900 text-lg">Current Availability</h4>
               </div>
               <ul className="space-y-3">
-                {availability.map((item, index) => (
+                {availability.map((item) => (
                   <li key={item.type} className="flex items-center justify-between">
                     <span className="text-gray-700">{item.type}</span>
                     <div className="flex items-center space-x-2">

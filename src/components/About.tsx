@@ -110,7 +110,7 @@ const About: React.FC = () => {
                 { icon: <Target size={20} />, title: 'Quick Learner', color: 'from-purple-500 to-pink-500' },
                 { icon: <Heart size={20} />, title: 'Passionate', color: 'from-pink-500 to-orange-500' },
                 { icon: <GraduationCap size={20} />, title: 'Adaptable', color: 'from-orange-500 to-red-500' }
-              ].map((value, index) => (
+              ].map((value) => (
                 <div key={value.title} className="flex items-center space-x-3 p-4 bg-white rounded-xl shadow-sm border border-gray-100">
                   <div className={`p-2 rounded-lg bg-gradient-to-r ${value.color}`}>
                     <div className="text-white">{value.icon}</div>
